@@ -1,0 +1,4 @@
+sudo iw list | sed -n -r '/ace modes/,/^\t[^\t]/p'
+airmon-ng start wlan0
+airreplay-ng --test wlan0mon
+interface=wlx00c
